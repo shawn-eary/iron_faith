@@ -1,2 +1,2 @@
-# iron_faith
+# Iron Faith
 IronFaith
