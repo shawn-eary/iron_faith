@@ -1,0 +1,62 @@
+<!--
+Copyright 2023 : Utilars™ and Shawn Eary
+Licensed via FCML : https://www.utilars.com/Home/FCML
+
+See [1] for Grid Layout
+-->
+<html>
+<head>
+  <link href="./style.css" rel="stylesheet" /> 
+  <script src="./third-party/jquery-3.7.0.js"></script>
+  <script src="./helpers.js"></script>
+  <script>
+    $(function() {
+      var thePage = getParam("p");
+
+      if (thePage === null) {
+        window.location = "./index.htm?p=cover"
+      } else {
+        // See [3]
+        var pageURL = "./Pages/" + thePage + ".htm";
+        $('#frBody').attr("src", pageURL);
+      }
+    });
+  </script>
+</head>
+<body>
+<div class="wrapperApp">
+  <div class="TOC-Short">
+    <ol>
+      <li><a href="./index.htm?p=cover">Cover</a></li>
+      <li><a href="./index.htm?p=why">Why Ironman?</a></li>
+      <li><a href="./index.htm?p=credits">Credits</a></li>
+    </ol>
+  </div>
+  <div class="Home">
+    <a href="./index.htm?p=cover">Home</a>
+  </div>
+  <div class="Reserved1">
+    Reserved1
+  </div>
+  <div class="Reserved2">
+    Reserved2
+  </div>
+  <div class="body" id="dBody">
+    <iframe src="" id="frBody" width="100%" height="100%"></iframe>
+  </div>
+  <div class="prev">
+    <!-- TODO: <a id="pLink" href="Prev">Prev</a> -->
+  </div>
+  <div class="attrib">
+    Copyright 2023 : Utilars™ and Shawn Eary</br>
+    Licensed via <a href="https://www.utilars.com/Home/FCML">FCML</a></br>
+    <a href="./index.htm?p=credits">Credits</a></br>
+    This is a template for a project I Hope to start working on.<br />
+    Source Code is at <a href="https://github.com/shawn-eary/iron_faith">https://github.com/shawn-eary/iron_faith</a>
+  </div>    
+  <div class="next">
+    <!-- TODO: <a id="nLink" href="Next">Next</a> -->
+  </div>
+</div>
+</body>
+</html>
