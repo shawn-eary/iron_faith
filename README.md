@@ -11,4 +11,4 @@ The eBook will be dedicated to my middle child Caitlin Faith Eary because she is
 
 There ain't much there right now, but the Alpha version of this eBook will
 be "openable" at the following URL:
-https://shawn-eary.github.io/iron_faith/index.htm?p=credits
+https://shawn-eary.github.io/iron_faith
