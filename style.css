@@ -17,6 +17,7 @@ See [1] for Grid Layout
   grid-row-start: 1;
   grid-row-end: 4;
   background-color: aqua;
+  height: 800px;
 }
 
 .Home {
